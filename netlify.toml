@@ -1,0 +1,15 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/articulo/*"
+  to   = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/quiz/*"
+  to   = "/index.html"
+  status = 200

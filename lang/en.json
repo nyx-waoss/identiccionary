@@ -1,0 +1,42 @@
+{
+    "generic.loading":"Loading...",
+
+    "searchbar.serachsomething":"Search for something...",
+
+    "nav.home":"Home",
+    "nav.glosary":"Glossary",
+    "nav.all":"All",
+    "nav.games":"Games",
+    "nav.quizes":"Quizes",
+    "nav.orientation":"Sexual Orientations",
+    "nav.genders":"Genders",
+    "nav.identities":"Identities",
+    "nav.gender_expr":"Gender Expressions",
+    "nav.account":"Account",
+    "nav.settings":"Settings",
+
+    "main.popular":"Popular",
+    "main.information_question1":"What are forms of identity in youth?",
+    "main.information_ans1":"Youth identities are the different ways in which young people explore and express who they are, what they like, what values they hold, and which groups, ideas, or communities they identify with. This process is a natural part of growing up and can be influenced by their family environment, friendships, experiences, culture, and social media.",
+    "main.information_ans2":"As parents or guardians, the most important thing is to maintain an attitude of listening, respect, and open dialogue, seeking to understand the meaning these identities hold for your children before passing judgment. Below is an introductory video that provides a general explanation of some of the most common identities and trends among youth today.",
+    "main.filterby":"Filter by...",
+
+    "article.langwarning":"This article was originally written in Spanish",
+    "article.end":"You have reached the end of the article...",
+
+    "settings.createdby":"Created by",
+    "settings.abouti12y":"Identiccionary is a platform designed for fathers, mothers, and caregivers of children and adolescents.<br><br>When a child expresses that they identify with a specific concept, group, trend, or term, the responsible adults can consult the platform to find its meaning, get contextual information, learn recommendations on how to approach the topic, and access explanatory videos that facilitate understanding and proper guidance.",
+    "settings.langwarning":"Warning: Translations are not yet complete! Many things will be poorly translated or not translated at all.",
+
+    "settings.button.savedata":"<i class='fi fi-ss-disk'></i> Save",
+    "settings.button.deletedata":"<i class='fi fi-ss-trash'></i> Delete data",
+    "settings.button.admintools":"<i class='fi fi-ss-admin-alt'></i>  Admin tools",
+    "settings.button.pictures":"<i class='fi fi-rr-picture'></i> Enable / Disable home images",
+    "settings.button.darkmode":"<i class='fi fi-rr-moon'></i> Enable / Disable dark mode",
+
+    "settings.button.goback":"<i class='fi fi-rr-angle-left'></i> Go back",
+    "settings.button.region":"<i class='fi fi-rr-globe'></i> Language and region",
+    "settings.button.account":"<i class='fi fi-rr-user'></i> Account",
+    "settings.button.customize":"<i class='fi fi-rr-pencil'></i> Customize",
+    "settings.button.aboutsys":"<i class='fi fi-rr-info'></i> About Identiccionary"
+}

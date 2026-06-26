@@ -1,0 +1,42 @@
+{
+    "generic.loading":"Chargement...",
+
+    "searchbar.serachsomething":"Rechercher quelque chose...",
+
+    "nav.home":"Accueil",
+    "nav.glosary":"Glossaire",
+    "nav.all":"Tous",
+    "nav.games":"INSERT TRANSL",
+    "nav.quizes":"INSERT TRANSL",
+    "nav.orientation":"Orientations sexuelles",
+    "nav.genders":"Genres",
+    "nav.identities":"Identités",
+    "nav.gender_expr":"Expressions de genre",
+    "nav.account":"Compte",
+    "nav.settings":"Paramètres",
+
+    "main.popular":"Populaires",
+    "main.information_question1":"Quelles sont les formes d'identité chez les jeunes ?",
+    "main.information_ans1":"Les identités de la jeunesse sont les différentes manières dont les jeunes explorent et expriment qui ils sont, ce qu'ils aiment, leurs valeurs et les groupes, idées ou communautés auxquels ils s'identifient. Ce processus est une partie naturelle de leur développement et peut être influencé par leur environnement familial, leurs amis, leurs expériences, leur culture et les réseaux sociaux.",
+    "main.information_ans2":"En tant que parents ou tuteurs, le plus important est de maintenir une attitude d'écoute, de respect et de dialogue ouvert, en cherchant à comprendre le sens que ces identités ont pour vos enfants avant de porter un jugement. Ci-dessous, une vidéo d'introduction explique de manière générale certaines des identités et tendances les plus courantes chez les jeunes aujourd'hui.",
+    "main.filterby":"Filtrer par...",
+
+    "article.langwarning":"Cet article a été écrit à l'origine en espagnol",
+    "article.end":"Vous avez atteint la fin de l'article...",
+
+    "settings.createdby":"Créé par",
+    "settings.abouti12y":"Identiccionary est une plateforme conçue pour les pères, les mères et les personnes chargées de la garde des enfants et des adolescents.<br><br>Lorsqu'un enfant exprime qu'il s'identifie à un concept, un groupe, une tendance ou un terme spécifique, les adultes responsables peuvent consulter la plateforme pour en connaître la signification, obtenir des informations contextuelles, découvrir des recommandations sur la manière d'aborder le sujet et accéder à des vidéos explicatives qui facilitent la compréhension et un accompagnement approprié.",
+    "settings.langwarning":"Attention : Les traductions ne sont pas encore complètes ! Beaucoup de choses seront mal traduites ou pas traduites du tout.",
+
+    "settings.button.savedata":"<i class='fi fi-ss-disk'></i> Enregistrer",
+    "settings.button.deletedata":"<i class='fi fi-ss-trash'></i> Supprimer les données",
+    "settings.button.admintools":"<i class='fi fi-ss-admin-alt'></i> Outils d'administration",
+    "settings.button.pictures":"<i class='fi fi-rr-picture'></i> Activer / Désactiver les images de l'accueil",
+    "settings.button.darkmode":"<i class='fi fi-rr-moon'></i> Activer / Désactiver le mode sombre",
+
+    "settings.button.goback":"<i class='fi fi-rr-angle-left'></i> Retour",
+    "settings.button.region":"<i class='fi fi-rr-globe'></i> Langue et région",
+    "settings.button.account":"<i class='fi fi-rr-user'></i> Compte",
+    "settings.button.customize":"<i class='fi fi-rr-pencil'></i> Personnaliser",
+    "settings.button.aboutsys":"<i class='fi fi-rr-info'></i> À propos d'Identiccionary"
+}

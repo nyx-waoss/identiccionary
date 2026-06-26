@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identiccionary</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
+    <meta name="google-site-verification" content="td00GYDnzHykh4Shzi8BROy9XLe3nFU7idQ3V87_ILs" />
+    <meta name="msvalidate.01" content="D77C9FE863663D519A9E011267E8B0BD" />
+    <meta name="description" content="Identiccionary ayuda a padres, madres y cuidadores a entender conceptos y tendencias con los que niños y adolescentes se identifican, mediante explicaciones, recomendaciones y videos.">
+    <meta property="og:title" content="Identiccionary">
+    <meta property="og:image" content="assets/logo.png">
+    <script src="i18n.js" defer></script>
+</head>
+<body>
+    <button class="floating_back_mobile" id="floating_back_mobile" onclick="showSidebar(true)">
+        <i class="fi fi-rr-menu-burger"></i>
+    </button>
+    <div class="toast" id="toast">
+        <span id="toast_text">información.display: flex;
+    flex-direction: column;
+
+    padding: 12px;
+    padding-left: calc(var(--sidebar-h) + 12px);
+    box-sizing: border-box;..</span>
+    </div>
+
+    <div id="modatc_config-overlay" class="overlay hidden">
+        <div class="modatc_config-modal modal">
+            <label class="title" for="modatc_config_authorinput">Autor del articulo:</label>
+            <input type="text" placeholder="Nombre Apellido" id="modatc_config_authorinput" autocomplete="off">
+            <label class="title" for="modatc_config_dateinput">Fecha:</label>
+            <input type="text" placeholder="*DIA* de *MES*" id="modatc_config_dateinput" autocomplete="off">
+            <label class="title" for="modatc_config_stags">Tags de busqueda (separados por ","):</label>
+            <input type="text" placeholder="furry, furros, furos, animales..." id="modatc_config_stags" autocomplete="off">
+
+            <label class="title" for="modatc_config_mainimg">Imagen principal:</label>
+            <div class="img-upload-zone" id="img_upload_zone">
+                <i class="fi fi-rr-picture"></i>
+                <span>Arrastra una imagen o haz clic para subir</span>
+                <span class="img-upload-or">o</span>
+                <input type="text" placeholder="https://..." id="modatc_config_mainimg" autocomplete="off">
+                <input type="file" id="img_upload_fileinput" accept="image/*" style="display:none">
+            </div>
+            <div id="img_preview_wrapper" class="hidden">
+                <img id="img_preview" src="" alt="Preview">
+                <button class="btn neutral" onclick="clearImgUpload()">Cambiar imagen</button>
+            </div>
+
+            <div class="buttons_wrapper">
+                <button class="btn"         onclick="debug_savemdsettings()"                             >Ingresar</button>
+                <button class="btn neutral" onclick="$('modatc_config-overlay').classList.add('hidden');">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="passcode-overlay" class="overlay hidden">
+        <div class="loading-modal modal">
+            <span class="title">Ingrese el codigo de administrador</span>
+            <input type="text" placeholder="0000..." id="passcode_ovr__input" autocomplete="off">
+            <div class="buttons_wrapper">
+                <button class="btn"         onclick="settings_debugOvr_trylogin()"                  >Ingresar</button>
+                <button class="btn neutral" onclick="$('passcode-overlay').classList.add('hidden');">Cancelar</button>
+            </div>
+            <span id="wrong_code_msg">Codigo incorrecto!</span>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="overlay">
+        <div class="loading-modal modal">
+            <img src="assets/loadingnew.gif" alt="Loading icon" class="loading_modal_iconani">
+            <span data-i18n="generic.loading">Cargando...</span>
+        </div>
+    </div>
+
+    <div id="aimodal" class="hidden">
+        <div class="topbar" id="aimodal_topbar">
+            <button onclick="closeAIModal()">X</button>
+            <span>ClintAI</span>
+        </div>
+        <div class="messages_container"></div>
+        <div class="askinput">
+            <input type="text" placeholder="Preguntar..." id="aimodal-usrinput">
+            <button onclick="sendMsgToAI()"> <i class="fi fi-rr-arrow-small-up"></i> </button>
+        </div>
+    </div>
+
+    <div id="searchbar_results_wrapper" class="hidden">
+        <span style="width: 100%; text-align: center;" data-i18n="searchbar.serachsomething">Busca algo...</span>
+    </div>
+    <nav id="sidebar">
+        <button onclick="gotoPage('home')"> <i class="fi fi-rr-house-chimney"></i> <span data-i18n="nav.home">Inicio</span> </button>
+        <button onclick="gotoPage('glosary')"> <i class="fi fi-rr-book-spells"></i> <span data-i18n="nav.glosary">Glosario</span> </button>
+        <button onclick="gotoPage('all')"> <i class="fi fi-rr-border-all"></i> <span data-i18n="nav.all">Todos</span> </button>
+        <button onclick="gotoPage('games')"> <i class="fi fi-rr-dice-alt"></i> <span data-i18n="nav.games">Juegos</span> </button>
+        <button onclick="gotoPage('quizes')"> <i class="fi fi-rr-playing-cards"></i> <span data-i18n="nav.quizes">Quizes</span> </button>
+
+        <span class="catg">Categorias</span>
+        <button onclick="gotoPage('orientation')"> <i class="fi fi-rr-heart"></i> <span data-i18n="nav.orientation">Orientaciones Sexuales</span> </button>
+        <button onclick="gotoPage('genders')"> <i class="fi fi-rr-venus-mars"></i> <span data-i18n="nav.genders">Géneros</span> </button>
+        <button onclick="gotoPage('identities')"> <i class="fi fi-rr-picpeople-filled"></i> <span data-i18n="nav.identities">Identidades</span> </button>
+        <button onclick="gotoPage('gender_expr')"> <i class="fi fi-rr-tshirt"></i> <span data-i18n="nav.gender_expr">Expresiones de género</span> </button>
+
+        <span class="catg">Populares</span>
+        <div class="btn_group" id="trending_sidebar"></div>
+
+        <div class="bottom_options">
+            <button onclick="gotoPage('settings','user')"> <i class="fi fi-rr-user"></i> <span data-i18n="nav.account">Cuenta</span> </button>
+            <button onclick="gotoPage('settings')"> <i class="fi fi-rr-settings-sliders"></i> <span data-i18n="nav.settings">Configuración</span> </button>
+        </div>
+    </nav>
+    <main>
+        <article class="page hidden" id="page_home">
+            <img alt="Identiccionary logo" src="assets/logo.png" class="logo" id="homescreen_logo">
+            <h3 id="welcometext">Bienvenido, Usuario!</h3>
+            <input type="text" class="searchbar" id="homepage_searchbar" placeholder="Buscar..." autocomplete="off">
+            <h3 data-i18n="main.popular">Populares</h3>
+            <div class="homepage_trending" id="homepage_trending"></div>
+            <h3 data-i18n="main.information_question1">¿Qué son las formas de identidad en los jóvenes?</h3>
+            <p class="content_p" data-i18n="main.information_ans1">Las identidades juveniles son las distintas formas en que los jóvenes exploran y expresan quiénes son, qué les gusta, qué valores tienen y con qué grupos, ideas o comunidades se sienten identificados. Este proceso es una parte natural de su crecimiento y puede verse influenciado por su entorno familiar, amistades, experiencias, cultura y redes sociales.</p>
+            <p class="content_p" data-i18n="main.information_ans2">Como padres o encargados, lo más importante es mantener una actitud de escucha, respeto y diálogo abierto, buscando comprender el significado que estas identidades tienen para sus hijos antes de emitir juicios. A continuación, se presenta un video introductorio que explica de manera general algunas de las identidades y tendencias más comunes entre los jóvenes en la actualidad.</p>
+            <video controls class="home-explain-video">
+                <source src="assets/general.mp4" type="video/mp4">
+                Ocurrio un error al cargar el video!
+            </video>
+        </article>
+
+        <article class="page underconstruction hidden" id="page_glosary">
+            <span class="iconglow">😸</span>
+            <h1>En construccion...</h1>
+            <span>Todavía estamos trabajando en esta página! Lamentamos las molestias...</span>
+        </article>
+        <article class="page hidden" id="page_all">
+            <div class="page_top_el top_wrapper">
+                <h1>Todos</h1>
+                <div class="right">
+                    <span class="subtitle" data-i18n="main.filterby">Filtrar por...</span>
+                    <select>
+                        <option selected>Todos</option>
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                        <option>Solo orientaciones sexuales</option>
+                        <option>Solo identidades</option>
+                    </select>
+                    <button class="apply-filter" onclick="allApplySlFilter()">Buscar <i class="fi fi-rr-search"></i></button>
+                </div>
+            </div>
+            <div id="allpg_item_wrapper_grid">
+                <span>Pagina en <strong>construccion</strong>, vuelve mas tarde! :D</span>
+            </div>
+        </article>
+        <article class="page underconstruction hidden" id="page_games">
+            <span class="iconglow">😸</span>
+            <h1>En construccion...</h1>
+            <span>Todavía estamos trabajando en esta página! Lamentamos las molestias...</span>
+        </article>
+
+        <article class="page hidden" id="page_quizResults">
+            <div class="fitem">
+                <span class="title" id="quizResTitle">Eres un therian</span>
+            </div>
+            <div class="fitem">
+                <span class="fullInfo" id="quizResFullInfo">Sgherdi ughf diudfng fdhguysgi  dsnSgher diughfdi udfngfdhg uysg  idsnSg her diughfd iudfngfdh guysgids nS gh erd iughf diu dfngfdhguysg ids n</span>
+            </div>
+            <div class="quizResBtnWrapper">
+                <button class="btn neutral" onclick="gotoPage('quizes')"> <i class="fi fi-br-angle-left"></i> Volver </button>
+            </div>
+        </article>
+        <article class="page hidden" id="page_quizes">
+            <div class="page_top_el top_wrapper">
+                <h1>Quizes</h1>
+                <div class="right">
+                    <input type="text" placeholder="Buscar quizes..." id="page_quizes_searchbar">
+                    <span class="subtitle" data-i18n="main.filterby">Filtrar por...</span>
+                    <select>
+                        <option selected>Todos</option>
+                        <option>A-Z</option>
+                        <option>Z-A</option>
+                        <option>Solo orientaciones sexuales</option>
+                        <option>Solo identidades</option>
+                    </select>
+                    <button class="apply-filter" onclick="allApplySlFilter()">Buscar <i class="fi fi-rr-search"></i></button>
+                </div>
+            </div>
+            <div id="page_quizes_quizescontainer"></div>
+        </article>
+        <article class="page hidden" id="page_quizform">
+            <div class="quizResBtnWrapper">
+                <button class="btn neutral" onclick="gotoPage('quizes')"> <i class="fi fi-br-angle-left"></i> Volver </button>
+            </div>
+            <div id="quizFormTopImg">
+                <h1 id="quizFormTitle">Cargando...</h1>
+                <span class="description" id="quizFormDescription">Info</span>
+                <span class="description" id="quizFormDateAuthor">Creado el -- por --</span>
+            </div>
+            <div id="quizFormContainer"></div>
+            <div id="quizFormButtons">
+                <button class="btn" onclick="quizFormShowResults()"> <i class="fi fi-br-check"></i> Obtener resultados </button>
+            </div>
+        </article>
+
+        <article class="page article hidden" id="page_debug_createArtcl">
+            <div class="content">
+                <input id="editor_article_title" type="text" placeholder="Titulo del articulo..." autocomplete="off">
+                <div class="subtitile_info">
+                    <span class="publishinfo" id="editor_article_publishinfo">Publicado el <strong>FECHA</strong> por <strong>AUTOR</strong></span>
+                    <button onclick="debug_configmd()"> <i class="fi fi-rr-settings"></i> </button>
+                    <button onclick="debug_openmd()"> <i class="fi fi-rr-folder-open"></i> </button>
+                    <button onclick="debug_downloadmd()"> <i class="fi fi-rr-download"></i> </button>
+                </div>
+                <div class="separator"></div>
+                <div id="editor_article_content" class="article-body">
+                    <div id="markdown_editor"></div>
+                </div>
+            </div>
+            <aside>
+                <img alt="Article Image" src="https://placehold.co/600x400?text=Sube+una+imagen" id="editor_article_asideimg">
+                <h2 id="editor_article_asidetitle">Articulo</h2>
+                <textarea id="editor_article_asidecontent" maxlength="500" placeholder="Descripcion simple del articulo, dato curioso, ejemplos, etc..."></textarea>
+
+                <h2>Contenido Relacionado</h2>
+                <a>Furries</a>
+                <a>Otherpaws</a>
+                <a>Otherkins</a>
+            </aside>
+
+            <div class="buttons_wrapper">
+            </div>
+        </article>
+        <article class="page hidden" id="page_debug">
+            <h1>Herramientas de Administrador ✨️</h1>
+            <div class="tools_wrapper">
+                <button onclick="gotoPage('debug_createArtcl')">
+                    <i class="fi fi-ss-pen-clip"></i>
+                    <span>Crear articulo</span>
+                </button>
+            </div>
+        </article>
+        <article class="page article hidden" id="page_articles">
+            <div class="content">
+                <h1 id="article_title" data-i18n="generic.loading">Cargando...</h1>
+                <div class="subtitile_info">
+                    <span class="publishinfo" id="article_publishinfo">Articulo</span>
+                    <button onclick="article_askAI()"> <i class="fi fi-sc-sparkles"></i> Preguntar a ClintAI</button>
+                </div>
+                <div class="separator"></div>
+                <span class="article-end" data-i18n="article.langwarning">Este articulo fue escrito originalmente en Español</span>
+                <div id="article_content" class="article-body"></div>
+                <span class="article-end" data-i18n="article.end">Has llegado al final del articulo...</span>
+            </div>
+            <aside>
+                <img alt="Article Image" src="https://placehold.co/600x400" id="article_asideimg">
+                <h2 id="article_asidetitle">Cargando...</h2>
+                <p id="article_asidecontent">Buscando articulo...</p>
+
+                <h2>Contenido Relacionado</h2>
+                <a href="#" onclick="openArticle('furry')">Furries</a>
+                <a href="#" onclick="openArticle('otherpaw')">Otherpaws</a>
+                <a href="#" onclick="openArticle('otherkin')">Otherkins</a>
+                <button class="btn neutral hidden" style="width: 100%; margin-top: 16px;" id="article_modifyarticle_btn" onclick="openArticleModify()"><i class="fi fi-rr-pencil"></i> Modificar articulo</button>
+            </aside>
+        </article>
+
+
+        <article class="page hidden" id="page_settings">
+            <nav class="settings_nav">
+                <button onclick="showSidebar(true)" id="settings_goback_mobile" data-i18n="settings.button.goback"> <i class="fi fi-rr-angle-left"></i> Volver</button>
+                <button onclick="gotoStPage('lang')"                            data-i18n="settings.button.region"> <i class="fi fi-rr-globe"></i> Idioma y región</button>
+                <button onclick="gotoStPage('user')"                            data-i18n="settings.button.account"> <i class="fi fi-rr-user"></i> Cuenta</button>
+                <button onclick="gotoStPage('customize')"                       data-i18n="settings.button.customize"> <i class="fi fi-rr-pencil"></i> Personalizar</button>
+                <button onclick="gotoStPage('about')"                           data-i18n="settings.button.aboutsys"> <i class="fi fi-rr-info"></i> Sobre Identiccionary</button>
+            </nav>
+            <section class="settings_page hidden" id="settings_page_lang">
+                <span class="subtitle" data-i18n="settings.langwarning">Advertencia: Las traducciones todavía no estan completas! Muchas cosas estaran mal traducidas o directamente no lo estaran.</span>
+                <div class="config-wr">
+                    <span class="title">Idioma</span>
+                    <select onchange="i18n.load(this.value)">
+                        <option value="es" selected>Español</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </div>
+                <div class="config-wr">
+                    <span class="title">Región</span>
+                    <select>
+                        <option selected>Costa Rica</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Argentina</option>
+                        <option>Colombia</option>
+                        <option>Nicaragua</option>
+                        <option>Brazil</option>
+                    </select>
+                </div>
+            </section>
+            <section class="settings_page hidden" id="settings_page_user">
+                <div class="config-wr">
+                    <span class="title">Nombre de usuario</span>
+                    <input type="text" placeholder="Nombre..." id="settings_usernameInput">
+                </div>
+                <button class="btn" onclick="settings_saveUsername()"      data-i18n="settings.button.savedata"><i class="fi fi-ss-disk"></i> Guardar</button>
+                <button class="btn danger" onclick="settings_clearData()"  data-i18n="settings.button.deletedata"><i class="fi fi-ss-trash"></i> Eliminar datos</button>
+                <div class="separator"></div>
+                <button class="btn neutral" onclick="settings_askForDebugPassword()" data-i18n="settings.button.admintools"><i class="fi fi-ss-admin-alt"></i>  Herramientas de administrador</button>
+            </section>
+            <section class="settings_page hidden" id="settings_page_customize">
+                <span class="sectiontitle">Privacidad</span>
+                <button class="btn neutral" onclick="toggleShowImgs()" data-i18n="settings.button.pictures"><i class="fi fi-rr-picture"></i> Activar / Desactivar imagenes del inicio</button>
+                <span class="sectiontitle">Tema</span>
+                <button class="btn neutral" onclick="toggleDarkMode()" data-i18n="settings.button.darkmode"><i class="fi fi-rr-moon"></i> Activar / Desactivar modo oscuro</button>
+            </section>
+            <section class="settings_page hidden" id="settings_page_about">
+                <img alt="Identiccionary logo" src="assets/logo.png">
+                <div class="config-wr">
+                    <span class="title">Version</span>
+                    <span class="information">26.0</span>
+                </div>
+                <div class="config-wr">
+                    <span class="title" data-i18n="settings.createdby">Creado por</span>
+                    <span class="information">Nyx_Waoss & Ian CR</span>
+                </div>
+                <span class="airinfo" data-i18n="settings.abouti12y">Identiccionary es una plataforma diseñada para padres, madres y personas encargadas del cuidado de niños y adolescentes.<br><br>Cuando un hijo expresa que se identifica con un concepto, grupo, tendencia o término específico, los adultos responsables pueden consultar en la plataforma su significado, obtener información contextual, conocer recomendaciones sobre cómo abordar el tema y acceder a videos explicativos que facilitan la comprensión y el acompañamiento adecuado.</span>
+            </section>
+        </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

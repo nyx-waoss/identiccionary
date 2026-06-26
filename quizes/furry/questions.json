@@ -1,0 +1,102 @@
+[
+    {
+        "quesitonid": "q1",
+        "question": "¿Qué tanto te atrae el arte de animales antropomórficos (personajes animales que caminan, hablan o visten como humanos)?",
+        "options": [
+            {"text": "No me llama la atención."},
+            {"text": "Me parece curioso o divertido de ver a veces."},
+            {"text": "Me gusta bastante, sigo a algunos artistas del estilo."},
+            {"text": "Me encanta; es mi tipo de arte favorito y consumo mucho de él."}
+        ]
+    },
+    {
+        "quesitonid": "q2",
+        "question": "¿Has creado, imaginado o te gustaría diseñar un personaje animal que te represente (una 'fursona')?",
+        "options": [
+            {"text": "No, no le veo el sentido."},
+            {"text": "Lo he pensado como un juego, pero nada serio."},
+            {"text": "Sí, tengo una idea clara o un boceto de cómo sería."},
+            {"text": "Sí, ya la tengo completamente definida e interactúo con ella."}
+        ]
+    },
+    {
+        "quesitonid": "q3",
+        "question": "En videojuegos con creador de personajes, ¿qué razas sueles elegir si están disponibles?",
+        "options": [
+            {"text": "Siempre elijo humanos o razas muy similares."},
+            {"text": "Varío según las habilidades, no me importa mucho el aspecto."},
+            {"text": "Suelo elegir criaturas híbridas o místicas si lucen genial."},
+            {"text": "Siempre prefiero razas animales, antropomórficas o bestias."}
+        ]
+    },
+    {
+        "quesitonid": "q4",
+        "question": "¿Cómo reaccionas cuando ves disfraces de personajes furry (fursuits) en convenciones o videos?",
+        "options": [
+            {"text": "Me resulta incómodo o extraño."},
+            {"text": "Me da igual, son como las mascotas de los deportes."},
+            {"text": "Me parece genial la creatividad y el trabajo detrás de ellos."},
+            {"text": "Me encantan, me gustaría tener uno o interactuar con quienes los usan."}
+        ]
+    },
+    {
+        "quesitonid": "q5",
+        "question": "¿Qué nivel de interacción tienes con la comunidad furry en internet (redes, foros, servidores)?",
+        "options": [
+            {"text": "Ninguna, evito esos espacios."},
+            {"text": "Solo veo contenido que me aparece por azar."},
+            {"text": "Sigo cuentas temáticas o participo de forma pasiva."},
+            {"text": "Formo parte activa de grupos, comparto contenido y hablo con gente del fandom."}
+        ]
+    },
+    {
+        "quesitonid": "q6",
+        "question": "¿Qué opinas de películas o series protagonizadas por animales con actitudes humanas (como Zootopia o Beastars)?",
+        "options": [
+            {"text": "No me gustan o me parecen solo para niños."},
+            {"text": "Las veo por la trama, el diseño de personajes no me influye."},
+            {"text": "Me gustan mucho debido al diseño estético de sus personajes."},
+            {"text": "Son mis favoritas; desearía que existieran más producciones de ese estilo."}
+        ]
+    },
+    {
+        "quesitonid": "q7",
+        "question": "¿Has usado o te gustaría usar un avatar, nombre o accesorios (orejas, colas) basados en tu animal favorito?",
+        "options": [
+            {"text": "No, prefiero mantener una estética completamente humana."},
+            {"text": "Solo en ocasiones muy específicas como Halloween o por un chiste local."},
+            {"text": "Sí, suelo usar avatares de animales en mis redes o perfiles de juego."},
+            {"text": "Sí, los uso constantemente y me siento muy cómodo expresándome así."}
+        ]
+    },
+    {
+        "quesitonid": "q8",
+        "question": "Cuando ves las dinámicas creativas del fandom (adoptables, comisiones de arte, historias), ¿qué sientes?",
+        "options": [
+            {"text": "No me interesa en absoluto."},
+            {"text": "Es un mercado curioso, pero ajeno a mí."},
+            {"text": "Me llama la atención e incluso consideraría comprar arte de ese tipo."},
+            {"text": "Participo activamente creando, comprando o compartiendo esa clase de contenido."}
+        ]
+    },
+    {
+        "quesitonid": "q9",
+        "question": "Si alguien te pregunta directamente si eres parte del Furry Fandom, ¿cuál sería tu respuesta honesta?",
+        "options": [
+            {"text": "No, definitivamente no tengo nada que ver con eso."},
+            {"text": "Me gustan algunos diseños, pero no me considero parte del grupo."},
+            {"text": "Estoy en el límite, comparto muchos gustos con ellos."},
+            {"text": "Sí, me considero plenamente un miembro del fandom."}
+        ]
+    },
+    {
+        "quesitonid": "q10",
+        "question": "¿Por qué decidiste tomar un test para saber si eres furry?",
+        "options": [
+            {"text": "Solo por aburrimiento o curiosidad casual."},
+            {"text": "Me dio risa el concepto y quería ver qué salía."},
+            {"text": "Tengo dudas reales sobre si mis gustos encajan con la definición."},
+            {"text": "Ya sé que lo soy, solo quería probar el cuestionario."}
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+{
+    "generic.loading":"Cargando...",
+
+    "searchbar.serachsomething":"Busca algo...",
+
+    "nav.home":"Inicio",
+    "nav.glosary":"Glosario",
+    "nav.all":"Todos",
+    "nav.games":"Juegos",
+    "nav.quizes":"Quizes",
+    "nav.orientation":"Orientaciones Sexuales",
+    "nav.genders":"Géneros",
+    "nav.identities":"Identidades",
+    "nav.gender_expr":"Expresiones de género",
+    "nav.account":"Cuenta",
+    "nav.settings":"Configuración",
+
+    "main.popular":"Populares",
+    "main.information_question1":"¿Qué son las formas de identidad en los jóvenes?",
+    "main.information_ans1":"Las identidades juveniles son las distintas formas en que los jóvenes exploran y expresan quiénes son, qué les gusta, qué valores tienen y con qué grupos, ideas o comunidades se sienten identificados. Este proceso es una parte natural de su crecimiento y puede verse influenciado por su entorno familiar, amistades, experiencias, cultura y redes sociales.",
+    "main.information_ans2":"Como padres o encargados, lo más importante es mantener una actitud de escucha, respeto y diálogo abierto, buscando comprender el significado que estas identidades tienen para sus hijos antes de emitir juicios. A continuación, se presenta un video introductorio que explica de manera general algunas de las identidades y tendencias más comunes entre los jóvenes en la actualidad.",
+    "main.filterby":"Filtrar por...",
+
+    "article.langwarning":"Este articulo fue escrito originalmente en Español",
+    "article.end":"Has llegado al final del articulo...",
+
+    "settings.createdby":"Creado por",
+    "settings.abouti12y":"Identiccionary es una plataforma diseñada para padres, madres y personas encargadas del cuidado de niños y adolescentes.<br><br>Cuando un hijo expresa que se identifica con un concepto, grupo, tendencia o término específico, los adultos responsables pueden consultar en la plataforma su significado, obtener información contextual, conocer recomendaciones sobre cómo abordar el tema y acceder a videos explicativos que facilitan la comprensión y el acompañamiento adecuado.",
+    "settings.langwarning":"Advertencia: Las traducciones todavía no estan completas! Muchas cosas estaran mal traducidas o directamente no lo estaran.",
+
+    "settings.button.savedata":"<i class='fi fi-ss-disk'></i> Guardar",
+    "settings.button.deletedata":"<i class='fi fi-ss-trash'></i> Eliminar datos",
+    "settings.button.admintools":"<i class='fi fi-ss-admin-alt'></i>  Herramientas de administrador",
+    "settings.button.pictures":"<i class='fi fi-rr-picture'></i> Activar / Desactivar imagenes del inicio",
+    "settings.button.darkmode":"<i class='fi fi-rr-moon'></i> Activar / Desactivar modo oscuro",
+
+    "settings.button.goback":"<i class='fi fi-rr-angle-left'></i> Volver",
+    "settings.button.region":"<i class='fi fi-rr-globe'></i> Idioma y región",
+    "settings.button.account":"<i class='fi fi-rr-user'></i> Cuenta",
+    "settings.button.customize":"<i class='fi fi-rr-pencil'></i> Personalizar",
+    "settings.button.aboutsys":"<i class='fi fi-rr-info'></i> Sobre Identiccionary"
+}

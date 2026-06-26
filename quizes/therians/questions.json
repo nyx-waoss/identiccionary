@@ -1,0 +1,102 @@
+[
+    {
+        "quesitonid":"q1",
+        "question":"¿Con qué frecuencia sientes que tu identidad interna se parece más a la de un animal que a la de un humano?",
+        "options":[
+            {"text":"Nunca."},
+            {"text":"Rara vez, solo en ciertas situaciones."},
+            {"text":"A veces y me hace reflexionar."},
+            {"text":"Frecuentemente; es una parte importante de cómo me percibo."}
+        ]
+    },
+    {
+        "quesitonid":"q2",
+        "question":"¿Qué sientes cuando imaginas vivir permanentemente como un animal específico?",
+        "options":[
+            {"text":"No me atrae la idea."},
+            {"text":"Sería divertido imaginarlo."},
+            {"text":"Se siente extrañamente natural."},
+            {"text":"Siento que describiría mejor quién soy."}
+        ]
+    },
+    {
+        "quesitonid":"q3",
+        "question":"¿Has sentido alguna vez la presencia de partes animales inexistentes, como cola, orejas o alas?",
+        "options":[
+            {"text":"Nunca."},
+            {"text":"Solo al jugar o imaginar."},
+            {"text":"Ocasionalmente y de manera involuntaria."},
+            {"text":"Con frecuencia y de forma espontánea."}
+        ]
+    },
+    {
+        "quesitonid":"q4",
+        "question":"¿Por qué te interesa la posibilidad de ser therian?",
+        "options":[
+            {"text":"No me interesa especialmente."},
+            {"text":"Me parece una comunidad interesante."},
+            {"text":"Podría explicar experiencias que tengo."},
+            {"text":"Siento que ya encaja con mi identidad."}
+        ]
+    },
+    {
+        "quesitonid":"q5",
+        "question":"Si descubrieras que nadie más conoce el término 'therian', ¿seguirías teniendo las mismas experiencias?",
+        "options":[
+            {"text":"No."},
+            {"text":"Probablemente menos."},
+            {"text":"Sí, en gran medida."},
+            {"text":"Sí, completamente."}
+        ]
+    },
+    {
+        "quesitonid":"q6",
+        "question":"Cuando observas un animal con el que te identificas, ¿qué sensación predomina?",
+        "options":[
+            {"text":"Simple admiración."},
+            {"text":"Deseo de imitarlo por diversión."},
+            {"text":"Familiaridad profunda."},
+            {"text":"Sensación de reconocimiento personal."}
+        ]
+    },
+    {
+        "quesitonid":"q7",
+        "question":"¿Cómo describirías tu relación con tu cuerpo humano?",
+        "options":[
+            {"text":"Estoy completamente cómodo con él."},
+            {"text":"A veces imagino rasgos animales por entretenimiento."},
+            {"text":"En ocasiones siento que algo falta."},
+            {"text":"Frecuentemente siento que debería tener rasgos animales."}
+        ]
+    },
+    {
+        "quesitonid":"q8",
+        "question":"¿Has tenido comportamientos instintivos relacionados con un animal específico que no realizas deliberadamente?",
+        "options":[
+            {"text":"Nunca."},
+            {"text":"Solo jugando o haciendo cosplay."},
+            {"text":"Sí, algunas veces sin pensarlo."},
+            {"text":"Sí, ocurren regularmente y se sienten naturales."}
+        ]
+    },
+    {
+        "quesitonid":"q9",
+        "question":"¿Cómo reaccionarías si mañana despertaras siendo físicamente el animal con el que te identificas?",
+        "options":[
+            {"text":"Entraría en pánico."},
+            {"text":"Sería curioso, pero querría volver a ser humano."},
+            {"text":"Me sentiría sorprendido pero relativamente cómodo."},
+            {"text":"Sentiría alivio o que algo finalmente encaja."}
+        ]
+    },
+    {
+        "quesitonid":"q10",
+        "question":"¿Cuál de estas frases describe mejor tu situación actual?",
+        "options":[
+            {"text":"Solo me gustan los animales."},
+            {"text":"Me identifico mucho con un animal, pero sigo sintiéndome totalmente humano."},
+            {"text":"No estoy seguro de qué soy y sigo explorando."},
+            {"text":"Siento que mi identidad es parcialmente o totalmente animal."}
+        ]
+    }
+]

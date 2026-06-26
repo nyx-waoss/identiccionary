@@ -1,0 +1,102 @@
+[
+    {
+        "quesitonid": "q1",
+        "question": "¿Con qué frecuencia has observado a la persona imitar de forma natural o espontánea movimientos animales (como caminar en cuatro patas, trotar o saltar)?",
+        "options": [
+            {"text": "Nunca lo ha hecho."},
+            {"text": "Solo cuando era muy pequeño o jugando de forma recreativa."},
+            {"text": "A veces lo hace de forma automática, incluso fuera de un contexto de juego."},
+            {"text": "Frecuentemente practica estos movimientos (quadrobics) y dedica tiempo a perfeccionarlos."}
+        ]
+    },
+    {
+        "quesitonid": "q2",
+        "question": "¿Cómo es la naturaleza de los sonidos animales que emite (gruñidos, aullidos, maullidos, ronroneos)?",
+        "options": [
+            {"text": "No emite ese tipo de sonidos."},
+            {"text": "Solo los hace para bromear, imitar un meme o llamar a una mascota."},
+            {"text": "A veces le salen de forma involuntaria ante un susto, enojo o comodidad."},
+            {"text": "Los usa con regularidad como una forma genuina de expresar sus emociones."}
+        ]
+    },
+    {
+        "quesitonid": "q3",
+        "question": "¿Ha mencionado o expresado frustración por no tener características físicas animales (como garras, cola, orejas o pelaje)?",
+        "options": [
+            {"text": "Nunca ha mencionado nada parecido."},
+            {"text": "Solo de forma graciosa o deseando tener superpoderes."},
+            {"text": "Ha comentado alguna vez que se siente 'incompleto' o extraña partes que no tiene."},
+            {"text": "Expresa de forma seria o recurrente disforia respecto a su cuerpo humano."}
+        ]
+    },
+    {
+        "quesitonid": "q4",
+        "question": "¿Cómo reacciona o interactúa con la naturaleza y con la especie animal con la que dice identificarse?",
+        "options": [
+            {"text": "Tiene un interés común, nada fuera de lo normal."},
+            {"text": "Le gustan mucho los documentales o tener mascotas de esa especie."},
+            {"text": "Muestra una conexión profunda, imitando su comportamiento social o buscando entornos naturales específicos."},
+            {"text": "Experimenta una fuerte sensación de pertenencia con esa especie, tratándolos como iguales."}
+        ]
+    },
+    {
+        "quesitonid": "q5",
+        "question": "¿Utiliza accesorios como colas (comúnmente de hilo o artificiales) o máscaras de animales pintadas a mano?",
+        "options": [
+            {"text": "No utiliza ningún accesorio de este tipo."},
+            {"text": "Solo los usó una vez para un disfraz de Halloween o evento escolar."},
+            {"text": "Los usa ocasionalmente en su habitación o con amigos de confianza."},
+            {"text": "Los considera parte de su identidad y los usa frecuentemente en su día a día."}
+        ]
+    },
+    {
+        "quesitonid": "q6",
+        "question": "Cuando habla sobre su conexión animal, ¿cómo define el vínculo?",
+        "options": [
+            {"text": "No habla de esto, o solo dice que le gustan los animales."},
+            {"text": "Dice que es su animal favorito o un personaje de ficción que admira."},
+            {"text": "Explica que siente que espiritualmente o internamente *es* ese animal."},
+            {"text": "Afirma con total convicción que su identidad interna no es enteramente humana."}
+        ]
+    },
+    {
+        "quesitonid": "q7",
+        "question": "¿Has notado cambios en su comportamiento que parezcan 'instintivos' (reaccionar al entorno como lo haría un animal)?",
+        "options": [
+            {"text": "No, sus reacciones son completamente convencionales."},
+            {"text": "A veces exagera sus reacciones por diversión o drama."},
+            {"text": "Ante ciertos estímulos (como ruidos fuertes o amenazas), reacciona con posturas o alertas animales."},
+            {"text": "Muestra de forma constante hábitos o reflejos específicos de una especie animal."}
+        ]
+    },
+    {
+        "quesitonid": "q8",
+        "question": "¿Consume o busca activamente contenido en redes sociales bajo las etiquetas 'Therian' o 'Therianthropy'?",
+        "options": [
+            {"text": "No que yo sepa, o su contenido es totalmente variado."},
+            {"text": "Ha visto algún video por curiosidad de internet."},
+            {"text": "Consume ese contenido con regularidad y conoce los términos del grupo."},
+            {"text": "Está muy involucrado en esa comunidad, sigue creadores therian e interactúa con ellos."}
+        ]
+    },
+    {
+        "quesitonid": "q9",
+        "question": "Si ha intentado explicarte lo que siente, ¿cómo describirías su actitud al respecto?",
+        "options": [
+            {"text": "No ha intentado explicar nada similar."},
+            {"text": "Lo planteó como una moda, un juego o un pasatiempo pasajero."},
+            {"text": "Se muestra un poco tímido pero intenta hacer entender que es algo importante para su persona."},
+            {"text": "Lo defiende con madurez y claridad como una parte fundamental de quién es."}
+        ]
+    },
+    {
+        "quesitonid": "q10",
+        "question": "¿Este comportamiento ha permanecido constante a lo largo del tiempo o ha ido en aumento de manera seria?",
+        "options": [
+            {"text": "No existe tal comportamiento."},
+            {"text": "Fue una fase muy breve que ya dejó atrás."},
+            {"text": "Lleva varios meses manteniendo este interés de forma intermitente."},
+            {"text": "Es una constante persistente en su vida que define su forma de actuar y expresarse."}
+        ]
+    }
+]

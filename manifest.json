@@ -1,0 +1,85 @@
+[
+  {
+    "id": "example",
+    "title": "Articulo de ejemplo",
+    "asideinfo": "Este es un articulo de ejemplo con mucho contenido! Que epico, jaja! Bueno, eso es todo lo que tengo que decir aqui.",
+    "mainimg": "https://placehold.co/600x400?text=Ejemplo",
+    "tags": [
+      "ejemplo",
+      "demo",
+      "prueba"
+    ]
+  },
+  {
+    "id": "femboy",
+    "title": "Femboys",
+    "asideinfo": "En produccion...",
+    "mainimg": "https://i.pinimg.com/236x/31/45/42/314542e02240a91c045f830c9745ef5a.jpg",
+    "tags": [
+      "mujer",
+      "femenino",
+      "femenina",
+      "chico",
+      "femboy",
+      "chica"
+    ]
+  },
+  {
+    "id": "furry",
+    "title": "Furrys / Furries",
+    "asideinfo": "Descripcion aqui...",
+    "mainimg": "https://www.lovebscott.com/wp-content/uploads/2025/03/Credit-@zeekayartInstagram.png",
+    "tags": [
+      "furro",
+      "furry",
+      "furries",
+      "furra",
+      "animal",
+      "fursuit",
+      "traje",
+      "gatito"
+    ]
+  },
+  {
+    "id": "gay",
+    "title": "Gays",
+    "asideinfo": "undefined",
+    "mainimg": "https://placehold.co/600x400",
+    "tags": [
+      "gay",
+      "femenino",
+      "gei",
+      "gey",
+      "gai",
+      "hombre"
+    ]
+  },
+  {
+    "id": "therians",
+    "title": "Therians",
+    "asideinfo": "Los therians son personas que sienten una conexión muy profunda con un animal específico y consideran que, de alguna manera, su identidad interna está relacionada con ese animal. No creen necesariamente que sean físicamente ese animal, sino que lo viven como parte de quiénes son.",
+    "mainimg": "https://i0.wp.com/elintransigente.com/wp-content/uploads/2026/02/Therians.webp?w=992&quality=95&ssl=1",
+    "tags": [
+      "therian",
+      "quadrobics",
+      "animal",
+      "salto",
+      "terian",
+      "teryan",
+      "theryan"
+    ]
+  },
+  {
+    "id": "transgender",
+    "title": "Transgeneros",
+    "asideinfo": "undefined",
+    "mainimg": "https://imgs.search.brave.com/E8rHoTTYf0M9ctr97G3cBBUniaMsp_hI931UmDtJsBE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzVhLzVk/LzliLzVhNWQ5YjY0/ZGM5NzBmYmY1ZDAx/YWJkNjRhZGM2YTdj/LmpwZw",
+    "tags": [
+      "trans",
+      "transgenero",
+      "bi",
+      "como mujer",
+      "como hombre"
+    ]
+  }
+]
